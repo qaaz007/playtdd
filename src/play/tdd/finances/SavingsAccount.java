@@ -1,4 +1,4 @@
-package play.tdd.com;
+package play.tdd.finances;
 
 public class SavingsAccount {
 	private int balance = 0;

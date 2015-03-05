@@ -1,4 +1,4 @@
-package play.tdd.com;
+package play.tdd.finances;
 
 import static org.junit.Assert.*;
 
