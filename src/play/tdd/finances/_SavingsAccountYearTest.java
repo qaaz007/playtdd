@@ -29,5 +29,12 @@ public class _SavingsAccountYearTest {
 		SavingsAccountYear nextYear = account.nextYear(10);
 		assertEquals("after interest calculation", 110, nextYear.balance());
 	}
+	
+	@Test
+	public void endingBalance() {
+		SavingsAccountYear account = new SavingsAccountYear(100, 10);
+		assertEquals(110, account.endingBalance());
+		
+	}
 
 }
