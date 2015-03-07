@@ -1,0 +1,4 @@
+Change SavingsAccount to SavingsAccountYear
+Ending balance?
+Capital gains tax calculation
+Replace deposit and withdrawl with transfering between accounts
