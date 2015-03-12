@@ -9,31 +9,38 @@ public class _SavingsAccountYearTest {
 
 	@Test
 	public void startingBalance() {
-		SavingsAccountYear account = new SavingsAccountYear(100, 10);
+		SavingsAccountYear account = createAccount();
 		assertEquals(100, account.startingBalance());
+	}
+
+	private SavingsAccountYear createAccount() {
+		SavingsAccountYear account = new SavingsAccountYear(100, 10);
+		return account;
 	}
 	
 	@Test
 	public void interestRate() {
-		SavingsAccountYear account = new SavingsAccountYear(100, 10);
+		SavingsAccountYear account = createAccount();
 		assertEquals(10, account.interestRate());
 	}
 	
 	@Test
 	public void endingBalance() {
-		SavingsAccountYear account = new SavingsAccountYear(100, 10);
+		SavingsAccountYear account = createAccount();
 		assertEquals(110, account.endingBalance());		
 	}
 	
 	@Test
 	public void nextYearStartingBalanceShouldEqualThisYearsEndingBalance() {
-		SavingsAccountYear thisYear = new SavingsAccountYear(100, 10);
+		SavingsAccountYear thisYear = createAccount();
 		assertEquals(thisYear.endingBalance(), thisYear.nextYear().startingBalance());		
 	}
 
 	@Test
 	public void nextYearsInterestRateEqualsThisYearsInterestRate() {
-		SavingsAccountYear thisYear = new SavingsAccountYear(100, 10);
+		SavingsAccountYear thisYear = createAccount();
 		assertEquals(thisYear.interestRate(), thisYear.nextYear().interestRate());
 	}
+	
+	
 }
