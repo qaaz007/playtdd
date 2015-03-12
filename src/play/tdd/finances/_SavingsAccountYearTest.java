@@ -30,5 +30,4 @@ public class _SavingsAccountYearTest {
 		SavingsAccountYear thisYear = new SavingsAccountYear(100, 10);
 		assertEquals(thisYear.interestRate(), thisYear.nextYear().interestRate());
 	}
-
 }
