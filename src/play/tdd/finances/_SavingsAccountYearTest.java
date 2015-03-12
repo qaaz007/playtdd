@@ -14,6 +14,12 @@ public class _SavingsAccountYearTest {
 	}
 	
 	@Test
+	public void interestRate() {
+		SavingsAccountYear account = new SavingsAccountYear(100, 10);
+		assertEquals(10, account.interestRate());
+	}
+	
+	@Test
 	public void endingBalance() {
 		SavingsAccountYear account = new SavingsAccountYear(100, 10);
 		assertEquals(110, account.endingBalance());		
